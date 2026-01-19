@@ -1,0 +1,17 @@
+{
+  "name": "kanban-task-board-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack Kanban Task Management Board",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend/client && npm start",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend/client && npm install",
+    "build": "cd frontend/client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
